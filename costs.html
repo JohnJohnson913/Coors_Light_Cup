@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Total Costs</title>
+<title>Coors Light Cup</title>
 
 <style>
 
-body{
-    font-family:Arial,sans-serif;
+*{
     margin:0;
-    background:#f4f6f8;
-    display:flex;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Sidebar */
+body{
+    font-family:Arial, sans-serif;
+    display:flex;
+    min-height:100vh;
+    background:#f4f6f8;
+}
+
+/* SIDEBAR */
 
 .sidebar{
     width:250px;
@@ -32,7 +36,7 @@ body{
 .sidebar img{
     width:180px;
     display:block;
-    margin:0 auto 15px auto;
+    margin:0 auto 20px auto;
 }
 
 .sidebar h2{
@@ -45,6 +49,7 @@ body{
     color:white;
     text-decoration:none;
     padding:12px;
+    margin-bottom:4px;
     border-radius:6px;
 }
 
@@ -52,26 +57,106 @@ body{
     background:#0057b8;
 }
 
+/* MAIN CONTENT */
+
 .content{
     margin-left:250px;
     width:calc(100% - 250px);
 }
 
-.page-header{
-    background:#003B7A;
+.hero{
+    background:
+        linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:220px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
     color:white;
-    padding:25px 40px;
+
+    padding:20px;
 }
 
-.page-content{
-    background:white;
-    margin:25px;
-    padding:30px;
-    border-radius:10px;
+.info h2{
+    color:#003B7A;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#00254d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:900px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .content{
+        width:100%;
+        margin-left:0;
+    }
+
+    body{
+        display:block;
+    }
 }
 
 </style>
-
 </head>
 
 <body>
+
+<div class="sidebar">
+
+    <img src="CLC_Logo.png" alt="Coors Light Cup">
+
+    <h2>Coors Light Cup</h2>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="schedule.html">📅 Schedule</a>
+    <a href="food.html">🍔 Food</a>
+    <a href="lodging.html">🏨 Lodging</a>
+    <a href="teams.html">⛳ Teams & Standings</a>
+    <a href="handicaps.html">📊 Handicaps</a>
+    <a href="results.html">🏆 Past Results</a>
+    <a href="costs.html">💲 Total Costs</a>
+    <a href="contact.html">✉️ Contact Info</a>
+
+</div>
+
+<div class="content">
+
+    <section class="hero">
+
+        <h1>Coors Light Cup</h1>
+
+        <p>
+            Golf • Friends • Beer • Tradition
+        </p>
+
+    </section>
+
+    <section class="info">
+
+        <h2>Welcome</h2>
+
+        <p>
+            Welcome to the official Coors Light Cup website.
+            Use the navigation menu on the left to access tournament
+            schedules, lodging, team 
