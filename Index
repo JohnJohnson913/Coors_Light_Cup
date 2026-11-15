@@ -1,7 +1,170 @@
-Welcome to the Coors Light Cup
-The official website for our annual golf tournament.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Tournament Details
-Date: TBD
-Location: TBD
-Format: TBD
+<title>Coors Light Cup</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+.hero{
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url("https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1600");
+        
+    background-size:cover;
+    background-position:center;
+
+    min-height:650px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+    text-align:center;
+}
+
+.logo{
+    width:350px;
+    max-width:90%;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    color:white;
+    font-size:3.5rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:white;
+    font-size:1.3rem;
+    max-width:700px;
+}
+
+.button-grid{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.button-grid a{
+    text-decoration:none;
+    color:white;
+
+    background:#003B7A;
+
+    padding:25px;
+    border-radius:12px;
+
+    text-align:center;
+    font-size:1.2rem;
+    font-weight:bold;
+
+    transition:.2s ease;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.button-grid a:hover{
+    background:#0055b8;
+    transform:translateY(-4px);
+}
+
+.intro{
+    max-width:1000px;
+    margin:auto;
+    padding:20px 30px 60px 30px;
+    text-align:center;
+}
+
+.intro h2{
+    color:#003B7A;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#00254d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <img src="CLC_Logo.png" alt="Coors Light Cup Logo" class="logo">
+
+    <h1>Coors Light Cup</h1>
+
+    <p>
+        Golf • Friends • Tradition
+    </p>
+
+</section>
+
+<section class="button-grid">
+
+    <a href="schedule.html">Schedule</a>
+
+    <a href="food.html">Food</a>
+
+    <a href="lodging.html">Lodging Details</a>
+
+    <a href="teams.html">Teams & Standings</a>
+
+    <a href="handicaps.html">Handicaps</a>
+
+    <a href="results.html">Past Results</a>
+
+    <a href="costs.html">Total Costs</a>
+
+    <a href="contact.html">Contact Info</a>
+
+</section>
+
+<section class="intro">
+
+    <h2>Welcome to the Coors Light Cup</h2>
+
+    <p>
+        The Coors Light Cup is an annual gathering of great golf,
+        great competition, and even better friends. This site contains
+        tournament schedules, teams, standings, lodging information,
+        handicaps, historical results, and all tournament-related details.
+    </p>
+
+</section>
+
+<footer>
+    Coors Light Cup Championship
+</footer>
+
+</body>
+</html>
